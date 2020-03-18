@@ -53,8 +53,9 @@ public class Problem {
             int numberOfElements = rand.nextInt(fakeHospitals.size());
 
             for (int i = 0; i <=numberOfElements; i++) {
-                temporar.add(temporarDelete.get(rand.nextInt(temporarDelete.size())));
-                temporarDelete.remove(rand.nextInt(temporarDelete.size()));
+                int index=rand.nextInt(temporarDelete.size());
+                temporar.add(temporarDelete.get(index));
+                temporarDelete.remove(index);
             }
             fakeResPrefMap.put(j, temporar);
 
@@ -75,8 +76,9 @@ public class Problem {
             int numberOfElements = rand.nextInt(fakeResidentList.size());
 
             for (int i = 0; i <=numberOfElements; i++) {
-                temporar.add(temporarDelete.get(rand.nextInt(temporarDelete.size())));
-                temporarDelete.remove(rand.nextInt(temporarDelete.size()));
+                int index=rand.nextInt(temporarDelete.size());
+                temporar.add(temporarDelete.get(index));
+                temporarDelete.remove(index);
             }
             fakeHosPrefMap.put(j, temporar);
 
