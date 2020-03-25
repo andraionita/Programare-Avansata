@@ -1,7 +1,7 @@
 /**
  * @author Andra Ionita grupa 2A7
- * In aceasta clasa am creat, deschis si customizat, prin adaugarea butoanelor si functionalitatilor lor,
- * consola in care se se va desena forme, incarca imagini si salva imagini. S-a creat si butonul de reset care v-a da clear la canvas.
+ * In aceasta clasa am creat, deschis si customizat, prin adaugarea butoanelor si functionalitatilor lor, consola
+ * in care se se va desena forme, incarca imagini si salva imagini. S-a creat si butonul de reset care v-a da clear la canvas.
  */
 
 import javax.imageio.ImageIO;
