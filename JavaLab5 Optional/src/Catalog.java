@@ -147,9 +147,9 @@ public class Catalog implements Serializable {
             }
             reader.close();
         } catch(FileNotFoundException e) {
-            System.out.println("File Not Found");
+
         } catch (IOException e) {
-            System.out.println("Path not found");
+     
         }
         return catalog;
     }
