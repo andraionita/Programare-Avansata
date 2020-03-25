@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f03d89f-388e-4994-9e7c-10e033a9d300" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cdac5903-c82c-41b7-aab4-86a49f4cd5aa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,25 +11,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="ProjectId" id="1ZIv8Qw37aomoX6qXHAMimCRM6k" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ZZXCgZead1q2pJxNGt8sigDupS" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../SGBD/TEMA 3 SGBD" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,7 +35,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Lab42" />
+      <module name="LabJava6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -64,33 +51,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5f03d89f-388e-4994-9e7c-10e033a9d300" name="Default Changelist" comment="" />
-      <created>1584539262354</created>
+      <changelist id="cdac5903-c82c-41b7-aab4-86a49f4cd5aa" name="Default Changelist" comment="" />
+      <created>1585047463910</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584539262354</updated>
-      <workItem from="1584539273526" duration="9598000" />
-      <workItem from="1584554565086" duration="40000" />
-      <workItem from="1584554693327" duration="673000" />
-      <workItem from="1584618205758" duration="79000" />
-      <workItem from="1584904307886" duration="61000" />
+      <updated>1585047463910</updated>
+      <workItem from="1585047470501" duration="13336000" />
+      <workItem from="1585061609747" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
