@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Lab5Optional">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lab5Optional</output-path>
+    <root id="archive" name="Lab5Optional.jar" />
+  </artifact>
+</component>
