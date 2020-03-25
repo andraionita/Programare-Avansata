@@ -6,7 +6,7 @@
  * BFS v-a returna o lista nodurilor parcurse si in ce ordine
  * Daca toate nodurile sunt returnate de BFS in vectorul mark inseamna ca graful este conex,
  * altfel trebuie afisate componentele conexe cu nodurile dintre ele. Facem acest lucru intr-un do while care
- * apeleaza functia BFS de mai multe ori incepand de la nodul care se termina componenta conexa anterioara. 
+ * apeleaza functia BFS de mai multe ori incepand de la primul nod care nu se afla in componenta conexa anterioara. 
  * Trecem apoi prin vectorul de mark cu un for si afisam nodurile care apartin componentei conexe;
  */
 
