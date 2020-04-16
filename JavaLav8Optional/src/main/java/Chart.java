@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @author Ionita Andra, grupa 2A7
  * Laboratorul 8 Optional
- * Aici am implementat clasa chart care are 2 metode: una care apeleaza functia de inserrare in chart si cea care salveaza datele
+ * Aici am implementat clasa chart care are 2 metode: una care apeleaza functia de inserare in chartController si cea care salveaza datele
  * relevante pentru a crea ranking-ul, si o metoda care afiseaza rankingul efectiv
  */
 public class Chart {
