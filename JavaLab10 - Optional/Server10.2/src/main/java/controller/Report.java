@@ -29,7 +29,7 @@ public class Report {
         try {
             FileWriter fw = new FileWriter("Gomoku.html");
             out = new BufferedWriter(fw);
-            dir = new File("E:/DESKTOP/JavaLab10/Server10.2/src/main/java/templates/");
+            dir = new File("E:/DESKTOP/JavaLab10/Server10.2/src/main/java/report/");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
