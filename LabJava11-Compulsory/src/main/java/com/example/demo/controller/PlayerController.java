@@ -5,7 +5,9 @@ import com.example.demo.Player;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+/**
+* @author Ionita Andra Paula, grupa 2A7
+*/
 
 import java.sql.SQLException;
 import java.util.ArrayList;

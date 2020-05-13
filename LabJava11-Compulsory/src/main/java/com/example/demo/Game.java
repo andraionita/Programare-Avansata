@@ -1,5 +1,7 @@
 package com.example.demo;
-
+/**
+* @author Ionita Andra Paula, grupa 2A7
+*/
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
