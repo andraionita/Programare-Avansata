@@ -5,7 +5,7 @@ package com.example.demo.controller;
  * Laborator 11 Optional
  */
 
-import com.example.demo.entity.Game;
+import com.example.demo.Game;
 import com.example.demo.repository.GamesRepo;
 import com.example.demo.services.GameService;
 import org.springframework.http.HttpHeaders;

@@ -5,7 +5,7 @@ package com.example.demo.services;
  * Laborator 11 Optional
  */
 
-import com.example.demo.entity.Game;
+import com.example.demo.Game;
 import com.example.demo.repository.GamesRepo;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +28,7 @@ public class GameService {
         Game game = GamesRepo.showGame(gameId);
         if(game!=null)
             return game;
-        else throw new CustomException("Jocul cu id-ul " + gameId+" nu a fost gasit");
+        else throw new StackTrace("Jocul cu id-ul " + gameId+" nu a fost gasit");
     }
 
     public static Game createGame(Game game) {
@@ -40,6 +40,6 @@ public class GameService {
         if (GamesRepo.showGame(gameId) != null) {
             GamesRepo.deleteGame(gameId);
             return "Succes";
-        } else throw new CustomException("Jocul nu a fost gasit");
+        } else throw new StackTrace("Jocul nu a fost gasit");
     }
 }

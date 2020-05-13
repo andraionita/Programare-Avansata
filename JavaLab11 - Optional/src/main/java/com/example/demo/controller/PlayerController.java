@@ -4,7 +4,7 @@ package com.example.demo.controller;
  * Laborator 11 Optional
  */
 
-import com.example.demo.entity.Player;
+import com.example.demo.Player;
 import com.example.demo.repository.PlayersRepo;
 import com.example.demo.services.PlayerService;
 import org.springframework.http.HttpHeaders;

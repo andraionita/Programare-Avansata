@@ -1,6 +1,6 @@
 package com.example.demo.services;
 
-import com.example.demo.entity.Player;
+import com.example.demo.Player;
 import com.example.demo.repository.PlayersRepo;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ public class PlayerService {
         Player player = PlayersRepo.showPlayer(playerId);
         if(player!=null)
             return player;
-        else throw new CustomException("Player-ul cu id-ul " + playerId+" nu a fost gasit");
+        else throw new StackTrace("Player-ul cu id-ul " + playerId+" nu a fost gasit");
     }
 
     public static Player createPlayer(Player player) {
@@ -37,13 +37,13 @@ public class PlayerService {
         if (PlayersRepo.showPlayer(playerId) != null) {
             PlayersRepo.deletePlayer(playerId);
             return "Succes";
-        } else throw new CustomException("Player-ul nu a fost gasit");
+        } else throw new StackTrace("Player-ul nu a fost gasit");
     }
 
     public static String updatePlayer(String playerId, String newName) {
         if (PlayersRepo.showPlayer(playerId) != null) {
             PlayersRepo.updatePlayer(playerId, newName);
             return "Succes";
-        } else throw new CustomException("Player-ul nu a fost gasit");
+        } else throw new StackTrace("Player-ul nu a fost gasit");
     }
 }

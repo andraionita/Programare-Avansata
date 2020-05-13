@@ -6,7 +6,7 @@ package com.example.demo.repository;
  */
 
 import com.example.demo.Database;
-import com.example.demo.entity.Player;
+import com.example.demo.Player;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

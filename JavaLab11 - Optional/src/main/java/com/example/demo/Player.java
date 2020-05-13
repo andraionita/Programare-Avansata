@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo;
 /**
  * @author : Ionita Andra Paula, 2A7
  * Laborator 11 Optional

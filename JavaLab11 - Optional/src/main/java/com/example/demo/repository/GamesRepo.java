@@ -4,7 +4,7 @@ package com.example.demo.repository;
  * Laborator 11 Optional
  */
 import com.example.demo.Database;
-import com.example.demo.entity.Game;
+import com.example.demo.Game;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
