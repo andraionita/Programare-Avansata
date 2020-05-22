@@ -12,10 +12,6 @@ public class Depot {
         this.name = name;
     }
 
-    /*public Depot(String name, ArrayList<Vehicle> vehicles) {
-        this.name = name;
-        this.vehicles = vehicles;
-    }*/
 
     public String getName() {
         return name;
@@ -26,7 +22,6 @@ public class Depot {
     }
 
     public Vehicle[] getVehicles() {
-        //System.out.println(this.vehicles);
         return this.vehicles;
     }
 
@@ -35,11 +30,11 @@ public class Depot {
             for (int i = 0; i < vehicles.length - 1; i++)
                 for (int j = i + 1; j < vehicles.length; j++)
                     if (vehicles[i].equals(vehicles[j])) {
-                        throw new Exception("Duplicate vehicle");
+                        throw new Exception("Vehicul duplicat");
                     }
             this.vehicles = vehicles;
         } catch (Exception err) {
-            System.out.println("Duplicate found in vehicles");
+            System.out.println("S-a gasit duplicat intre vehicule");
         }
         for(Vehicle v : vehicles) {
             v.setDepot(this);

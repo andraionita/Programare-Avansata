@@ -3,30 +3,13 @@ package KnapsackProblem;
 /**
  * @author Ionita Andra Paula grupa 2A7
  * Laborator 3 Bonus
- 
- * Note: Intuitively, for each of the n items, we have to make one decision, whether to
-take that particular item or not. Thus any node must represent some item. Also,
-we have a capacity bound on the knapsack weight, so we also need to maintain
-a weight field in each node which represents the weight of the items included
-on the path of reaching that particular node. Now comes the question of what
-the edges shall represent. We might guess that the edges should represent the
-value of that particular item. This edge shall represent the decision that we
-took the particular item into our knapsack. So this edge would now be incident
-on another level of the graph denoting the next item level, but the weight node
-would be updated and hence, it would be incident accordingly on that particular
-node of the next level which has the weight field as equal to the new updated
-total weight. Also we might choose to not take the ith item with us. In this
-case, the edge corresponding to this node would be incident on the next level
-(the level for the next item) which has the weight field same as the previous
-one.
-In this particular graph basically, we need to find the solution for maximum
-path length from the source to any done vertex (the n + 1th level vertex).
-We already have shortest path finding algorithms for DAGs (Directed Acyclic
-Graphs) using topological ordering. Thus convert this graph so that our aim
-becomes computing the minimum length path. For this, make all edge weights
-as negative of what they already are. Thus, now we can implement an already
-known graph algorithm to get the solution for maximum knapsack value. The
-answer to return would be negative of the minimum path length.*/
+
+ * Intuitiv, pentru fiecare dintre cele n itemi, trebuie să luăm o singură decizie, indiferent dacă
+ * lua, acel articol sau nu. Astfel, orice nod trebuie să reprezinte un element. De asemenea,
+ * avem o capacitate legată de greutatea rucsacului, de aceea trebuie să menținem și noi
+ * un câmp de greutate în fiecare nod care reprezintă greutatea elementelor incluse.
+ * Marginile ar trebui să reprezinte valoarea acelui articol.
+ */
 public class GraphModel {
     Problem p1;
 
@@ -191,10 +174,6 @@ public class GraphModel {
         double[] weight = findShortestPath(weightMatrix, 0, rows).clone();
         int total = 0;
 
-        //for(double i:profit)
-            //System.out.println(i);
-        //for(double i:weight)
-            //System.out.println(i);
 
         double max = -5;
         double actualWeight = 0;
@@ -206,7 +185,7 @@ public class GraphModel {
                 total += profit[i] * weight[i];
             }
         }
-        System.out.println("The maximum cumulated profit factor you can get is " + max + " with a total weight of " +
+        System.out.println("Profitul maxim este  " + max + " iar greutatea totala a lor este " +
                 (int) actualWeight);
     }
 }

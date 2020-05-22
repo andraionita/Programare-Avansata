@@ -16,10 +16,8 @@ public class DynamicProg implements Algorithm {
     }
 
     public void FillKnapsack() {
-        //respects the algorithm described in the slides - we use a bottom-up approach to calculate the optimal solution using the matrix
-        //runs in O(nbItems*capacity)
-        //each item can be taken or not taken
-        //when there are i items to choose, m[i][w] is the optimal weight when the maximum weight of the knapsack is w
+   
+		//respectam algoritmul descris in slideuri
         int capacity = (int) knapsack.getCapacity();
         int nbItems = items.size();
         double[][] m = new double[nbItems + 1][capacity + 1];
@@ -30,9 +28,7 @@ public class DynamicProg implements Algorithm {
 
         for (int i = 1; i <= nbItems; i++) {
             for (int w = 1; w <= capacity; w++) {
-                //with the weight limit w, the optimal selections among items {1, 2, ..., i – 1, i} to have the largest value will have two possibilities:
-                //if item i is not selected, m[i][w] is the maximum possible value by selecting among items {1, 2, ..., i – 1} with weight limit of w
-                //if item i is selected (of course we only consider this case when weight[i] <= w) then m[i][w] is equal to value[i] + the maximum value that can be obtained by selecting among items {1, 2, ..., i – 1} with the limit (w – weight[i])
+
                 if (items.get(i - 1).getWeight() > w) {
                     m[i][w] = m[i - 1][w];
                 } else {
@@ -40,7 +36,7 @@ public class DynamicProg implements Algorithm {
                 }
             }
         }
-        System.out.println("[DP] The maximum profit you can get is " + m[nbItems][capacity] + " with the following items:");
+        System.out.println("[Dynamic] Profitul maxim este " + m[nbItems][capacity] + " obtinut cu itemele:");
 
         do {
             if (m[nbItems][capacity] != m[nbItems - 1][capacity]) {

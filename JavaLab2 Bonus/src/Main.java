@@ -13,7 +13,7 @@ public class Main {
         Client c1 = new Client();
         c1.setName("Client 1");
         c1.setOrder(1);
-        //System.out.println(c1.getName());
+
         Client c2 = new Client("Client 2", 1);
         Client c3 = new Client("Client 3", 7);
         Client c4 = new Client("Client 4", 6);
@@ -21,7 +21,7 @@ public class Main {
         Client c6 = new Client("Client 6", 5);
         Client c7 = new Client("Client 7", 5);
         Client c8 = new Client("Client 8", 3);
-        //System.out.println(c2);
+
         Vehicle[] vehicles = new Vehicle[3];
         vehicles[0] = new Car("V1");
         vehicles[1] = new Drone("V2");

@@ -6,7 +6,7 @@ import java.io.*;
  * Laborator 2 Bonus
  */
 class ShortestPath {
-    // find the vertex with minimum cost value from the set of vertices not yet included in MST
+	//aflam nodul cu valoarea costului minima dintre nodurile care nu au fost incare incluse
     static final int V = 9;
 
     int mincostance(int cost[], Boolean visited[]) {
@@ -22,7 +22,7 @@ class ShortestPath {
     }
 
     void printSolution(int cost[], int n) {
-        System.out.println("Client   Tour cost");
+        System.out.println("Client   Costul turului");
         for (int i = 1; i < V; i++)
             System.out.println(i + " \t\t " + cost[i]);
     }
@@ -30,27 +30,29 @@ class ShortestPath {
     void Dijkstra(int graph[][], int sourceVertex) {
         int u, copy=0;
         System.out.print("Clients in order: ");
-        int cost[] = new int[V]; // the min cost from sourceVertex to i = output array
+        int cost[] = new int[V]; // costul minim de la sourceVertex la i  = output array
 
-        // visited[i] will be true if the vertex i is included in MST or min cost from sourceVertex to i is finalized
-        Boolean visited[] = new Boolean[V];
+       //visited[i] va deveni true daca nodul i este inclus in MST sau costul minim din sourceVertex pana la i este gata
+	   Boolean visited[] = new Boolean[V];
         
         for (int i = 0; i < V; i++) {
             cost[i] = Integer.MAX_VALUE;
             visited[i] = false;
         }
 
-        // cost of source vertex from itself is always 0
+//costul de la nodul sursa la el insusi e 0
+
         cost[sourceVertex] = 0;
 
-        // Find "cheapest" path for all vertices 
+		//Cautam cel mai ieftin drum pentru toate nodurile
         for (int count = 0; count < V - 1; count++) {
-            // Pick the minimum cost vertex from the set of vertices
-            // not yet processed. u is always equal to sourceVertex in first 
-            // iteration.
+         
+			//alegem nodul cu costul minim din setul de noduri care nu a fost inca ales.
+			//u este egal cu nodul sursa la prima iterare
             u = mincostance(cost, visited);
 
-            // Mark the picked vertex as processed 
+    
+			//marcam nodurile pe masura ce sunt procesate
             visited[u] = true;
             if(graph[copy][u]!=-1)
                 System.out.print(u + " -> ");
@@ -60,11 +62,11 @@ class ShortestPath {
                 System.out.print(u + " -> ");
             }
 
-            // Update cost of the adjacent vertices of the picked vertex
+			//actualizam costul nodurilor adiacente dintre nodurile alese
             for (int v = 0; v < V; v++) {
-                // Update cost[v] only if v is not in visited, there is an
-                // edge from u to v and the total weight of the path from sourceVertex to
-                // v through u is smaller than current value of cost[v] - bascially Dijkstra
+             
+				//Actualizam costul[v] doar daca v nu este vizitat
+				//aplicam in principiul algoritmul Dijkstra de la grafuri
                 if (!visited[v] && graph[u][v] != -1 &&
                         cost[u] != Integer.MAX_VALUE && cost[u] + graph[u][v] < cost[v]) {
                     cost[v] = cost[u] + graph[u][v];

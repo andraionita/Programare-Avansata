@@ -21,9 +21,9 @@ public class Main {
         items.add(weapon);
         //items.add
         Knapsack k = new Knapsack(10);
-        System.out.println("Capacity of the knapsack: " + k.getCapacity());
+        System.out.println("Capacitatea rucsac: " + k.getCapacity());
 
-        System.out.println("Instance of the problem: ");
+        System.out.println("Instanta problema: ");
         for (Item i : items)
             System.out.println(i);
 
@@ -39,7 +39,7 @@ public class Main {
         Problem pb = new Problem();
         System.out.println(pb);
         System.out.println("...................");
-        System.out.println("The greedy solution for my random problem is:");
+        System.out.println("Solutia greedy a problemei este:");
         Greedy randomSol = new Greedy(pb.getKnapsack(), pb.getItems());
         randomSol.FillKnapsack();
         System.out.println("...................");
@@ -49,7 +49,7 @@ public class Main {
         GraphModel graph = new GraphModel(graphTry);
 
         try {
-            //you don't want to print such a large matrix
+   
             //graph.printMatrix();
             graph.getSolution();
         } catch (Exception e) {

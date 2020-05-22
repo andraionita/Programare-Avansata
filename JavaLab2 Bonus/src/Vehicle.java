@@ -2,9 +2,9 @@ import java.util.Objects;
 /**
  * @author Ionita Andra Paula grupa 2A7
  * Laborator 2 Bonus
- * Instead of using an enum, create dedicated classes for cars, trucks and drones. Vehicle will become abstract.
- * Each vehicle belongs to a single depot. It starts from there and it may return there at any time.
- * Each vehicle will perform a single tour, consisting of one or more trips with strictly ascending visiting times, starting from its depot and ending in it.
+ * In loc sa folosim enum, vom crea clase dedicate pentru car, trucks si drones iar vehicle devina abstract
+ * Fiecare vehicul apartine unui singur depozit.
+ * Fiecare vehicul face un singur tur 
  */
 
 public abstract class Vehicle {

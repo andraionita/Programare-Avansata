@@ -16,8 +16,7 @@ public class Greedy implements Algorithm {
     }
 
     public void FillKnapsack() {
-        //sorts the given items array and adds stuff to the knapsack according to this order, until it reaches the maximum capacity
-        //runs in O(nbItems) - theoretically faster than DP on larger problems
+		//sortam itemele 
         Collections.sort(items, new SortByValue());
         Item[] itemsArray = new Item[items.size()];
         itemsArray = items.toArray(itemsArray);

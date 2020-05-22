@@ -10,9 +10,8 @@ public class Solution {
         this.problem = problem;
     }
 
-    /** simple algorithm for allocating trips to vehicles
-     * @param problem the problem with all the parameters
-     */
+
+	 //algoritm simplu de alocare a calatoriilor 
 
     public void getSolution(Problem problem) {
         ArrayList<Client> clientArray = new ArrayList<Client>();
@@ -28,8 +27,7 @@ public class Solution {
         }
 
         System.out.println(mySet);
-        System.out.println("One greedy solution for the problem is: ");
-        //System.out.println(mySet);
+        System.out.println("Solutia greedy pentru problema: ");
         System.out.println(clientArray);
     }
 }

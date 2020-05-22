@@ -12,14 +12,15 @@ public class Problem {
     private List<Item> items;
 
     public Problem() {
-        //creates a random problem - which includes a random capacity for the knapsack and a random number of random items from which
-        //by applying either greedy or dp, you can get a solution
-        //this may generate weights/costs of 0 => infinity values later
+     
+		
+		//cream o problema random care include generarea unei capacitati si a unui numar de iteme random.
+		//poti apela fie greedy fie dynamicprog pt a obtine solutia
         this.knapsack = new Knapsack();
         this.knapsack.setCapacity((int) Math.floor(Math.random() * 80));
         int nrItems = (int) Math.floor(Math.random() * 20);
         this.items = new ArrayList<Item>(nrItems);
-        System.out.println("My random knapsack has a number of " + nrItems + " items and a capacity of " + knapsack.getCapacity());
+        System.out.println("Problema random: Numarul de iteme este " + nrItems + " iar capacitatea este de " + knapsack.getCapacity());
         for (int i = 0; i < nrItems; ++i) {
             int chosenItem = (int) Math.floor(Math.random() * 2);
             //System.out.println(chosenItem);

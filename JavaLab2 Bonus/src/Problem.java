@@ -33,7 +33,7 @@ public class Problem {
                     }
             this.depots = depots;
         } catch (Exception err) {
-            System.out.println("Duplicate found in depot");
+            System.out.println("Duplicat gasit in depozit");
         }
     }
 
@@ -46,11 +46,11 @@ public class Problem {
             for (int i = 0; i < clients.length - 1; i++)
                 for (int j = i + 1; j < clients.length; j++)
                     if (clients[i].equals(clients[j])) {
-                        throw new Exception("Duplicate client");
+                        throw new Exception("Client duplicat");
                     }
             this.clients = clients;
         } catch (Exception err) {
-            System.out.println("Duplicate found in clients");
+            System.out.println("S-a gasit duplicat intre clienti");
         }
     }
 
@@ -68,7 +68,6 @@ public class Problem {
         return result;
     }
 
-    /** @return an array of all the vehicles, form all depots.*/
 
     public Vehicle[] getVehicles() {
         //tester
