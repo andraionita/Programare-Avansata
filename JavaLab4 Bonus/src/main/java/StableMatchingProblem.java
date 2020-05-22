@@ -6,7 +6,7 @@
 import java.util.List;
 import java.util.Map;
 
-public class SMP {
+public class StableMatchingProblem {
     private List<Element> elementList;
     private List<Partition> partitionList;
     private Map<Element, List<Partition>> elementPrefMap;
