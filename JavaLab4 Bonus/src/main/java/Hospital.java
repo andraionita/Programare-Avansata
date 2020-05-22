@@ -1,7 +1,6 @@
 /**
  * @author : Ionita Andra, grupa 2A7
  */
-package HR;
 
 public class Hospital implements Type {
     private String name;

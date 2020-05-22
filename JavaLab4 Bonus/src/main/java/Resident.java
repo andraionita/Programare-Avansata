@@ -1,15 +1,14 @@
 /**
  * @author : Ionita Andra, grupa 2A7
  */
-package HR;
 
-public class Element {
+public class Resident {
     private String name;
 
-    public Element() {
+    public Resident() {
     }
 
-    public Element(String name) {
+    public Resident(String name) {
         this.name = name;
     }
 
@@ -19,5 +18,10 @@ public class Element {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

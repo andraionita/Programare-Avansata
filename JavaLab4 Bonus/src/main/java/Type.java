@@ -1,6 +1,5 @@
 /**
  * @author : Ionita Andra, grupa 2A7*/
-package HR;
 
 public interface Type extends Comparable {
 

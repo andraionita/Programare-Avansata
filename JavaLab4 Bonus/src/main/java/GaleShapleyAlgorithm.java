@@ -3,18 +3,18 @@
  * Aici am implementat algoritmul Gale Shapley pentru a rezolva problema de HR.
 *  
  */
-package HR;
+
 
 import java.util.*;
 
 
-public class GaleShapley {
+public class GaleShapleyAlgorithm {
     private List<Resident> residentList;
     private List<Hospital> hospitalList;
     private Map<Resident, List<Hospital>> resPrefMap;
     private Map<Hospital, List<Resident>> hosPrefMap;
 
-    public GaleShapley(List<Resident> residentList, List<Hospital> hospitalList, Map<Resident, List<Hospital>> resPrefMap, Map<Hospital, List<Resident>> hosPrefMap) {
+    public GaleShapleyAlgorithm(List<Resident> residentList, List<Hospital> hospitalList, Map<Resident, List<Hospital>> resPrefMap, Map<Hospital, List<Resident>> hosPrefMap) {
         this.residentList = residentList;
         this.hospitalList = hospitalList;
         this.resPrefMap = resPrefMap;
